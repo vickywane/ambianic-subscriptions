@@ -294,7 +294,7 @@
 		},
 		{
 			"key": "FUNCTION_URL",
-			"value": "http://127.0.0.1:4010"
+			"value": "https://deploy-preview-20--hopeful-bell-0b6f9f.netlify.app/.netlify/functions"
 		}
 	]
 }

@@ -1,6 +1,8 @@
 require("dotenv").config()
 const newman = require("newman");
 
+console.log(process.env.MOCK_ENDPOINT || "http://127.0.0.1:4010")
+
 newman.run(
   {
     collection: require("./tests/ambianic-functions-collection.postman_collection.json"),
