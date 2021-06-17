@@ -2,7 +2,7 @@
  autoLaunch = false
 
 [build]
-command = "npm run mock-server"
+command = "npm run build"
 functions = "netlify/functions"
 
 [[headers]]
