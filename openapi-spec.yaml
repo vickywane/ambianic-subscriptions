@@ -402,9 +402,9 @@ paths:
             examples: {}
   /product:
     get:
-      summary: Retrieve notification product
+      summary: Retrieve product and pricing information associated with a premium customer subscription.
       description: An endpoint to retrieve details about the Ambianic notifications product.
-      operationId: get-notification-product
+      operationId: get-product-information
       parameters:
         - name: Access-Control-Allow-Origin
           in: header

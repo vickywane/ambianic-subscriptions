@@ -316,7 +316,7 @@
 						}
 					]
 				},
-				"description": "Retrieve the notification product details from Stripe"
+				"description": "Retrieve product and pricing information associated with a premium customer subscription."
 			},
 			"response": []
 		}
