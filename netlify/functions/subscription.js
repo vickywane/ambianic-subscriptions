@@ -16,6 +16,9 @@ exports.handler = async (
   const { stripeId, userSubscriptionId } = queryStringParameters;
 
   const operation = httpMethod;
+
+    console.log(operation, 'OPERATION HERE \n \n \n \n \n \n')
+
   if (operation === "OPTIONS") {
     // for preflight check
     callback(null, {

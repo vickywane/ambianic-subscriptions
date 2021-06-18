@@ -39,10 +39,8 @@ jobs:
           site_name: "ambianic-serverless"
           max_timeout: 60
 
-      - name: Run tests against deployed preview
-        run:  npm run test:postman
-        env:
-          FUNCTION_URL: http://127.0.0.1:4010
+      - name: Ensure return 200 status code
+        run: ./script.sh ${{ steps.get-netlify-url.outputs.url }}/.netlify/functions/subscription
 
       - name: Run OpenAPI Tests and generate Code Coverage
         run: cd openapi-docs/ && npm install && npm run test
